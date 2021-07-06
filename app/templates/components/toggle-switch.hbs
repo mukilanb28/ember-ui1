@@ -1,0 +1,10 @@
+<div class="switch-toggle switch-3 switch-candy">
+
+  <input id="archived" name="state-d" type="radio" checked={{eq archived 0}}/>
+  <label for="archived" {{action "toggleState" 0}}>Users</label>
+
+  <input id="all" name="state-d" type="radio"  checked={{eq archived 1}} />
+  <label for="all" class="disabled" {{action "toggleState" 1}}>All Users</label>
+
+</div>
+{{yield}}

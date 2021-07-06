@@ -2,11 +2,12 @@
   <div class="container has-text-centered">
     <div class="column is-3 is-offset-4">
 
-      <LinkTo @route="users">
+
+      <a href="/users">
         <button class="button mb-2" type="button">
           Back to users
         </button>
-      </LinkTo>
+      </a>
 
       <div class="user-profile">
 
@@ -22,6 +23,8 @@
           Example Value:
           {{@model.value}}
         </p>
+        <ArchiveState @model={{model}}>
+        </ArchiveState>
 
         {{!-- Place the component to archive/unarchive users here --}}
 

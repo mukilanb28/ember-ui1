@@ -57,3 +57,33 @@ input::placeholder {
   color: var(--font-color2);
   text-decoration: underline;
 }
+.red-theme button{
+  border:1px solid red;
+  color: red;
+}
+.green-theme button{
+  border:1px solid green;
+  color:green;
+}
+.switch-toggle {
+  float: left;
+  background: #242729;
+}
+.switch-toggle input {
+ position: absolute;
+ opacity: 0;
+}
+.switch-toggle input + label {
+ padding: 7px;
+ float:left;
+ color: #fff;
+ cursor: pointer;
+}
+.switch-toggle input:checked + label {
+ background: green;
+}
+.switch-toggle-layer{
+  float: right;
+  margin-right: 150px;
+  margin-top: 3px;
+}
